@@ -16,7 +16,7 @@ const AddStoryModal = ({ closeModal, postStory, editingStory }) => {
     const isLastSlide = currentSlide === slides[slides.length - 1].id;
     const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
 
-    s
+
     const categories = ['Food', 'Medical', 'Technology', 'Travel', 'World', 'India', 'News'];
 
     useEffect(() => {

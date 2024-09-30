@@ -21,7 +21,9 @@ const corsOptions = {
     optionSuccessStatus: 200
 };
 app.use(cors(corsOptions));
+console.log('here')
 app.use('/auth', authRoutes);
+console.log('here 2')
 app.use('/api/stories', storyRoutes);
 
 app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
@@ -39,5 +41,5 @@ mongoose.connect(process.env.MONGO_URI, {
 
 
 app.listen(5000, () => {
-    console.log(`listening at port https://social-vv1i.onrender.com: 5000`);
+    console.log(`listening at port https://social-vv1i.onrender.com`);
 })

@@ -14,17 +14,23 @@ const Register = ({ closeModal }) => {
     const handleRegister = async () => {
         if (isRegistering) return;
 
+        console.log('register 1')
+
         if (!username || !password) {
             setErrorMessage('Username and password are required.');
             return;
         }
 
+        console.log('register 2')
+
         setIsRegistering(true);
+        console.log('register 3')
         try {
-            const response = await axios.post('https://social-vv1i.onrender.com:5000/auth/signup', {
+            const response = await axios.post('https://social-vv1i.onrender.com/auth/signup', {
                 username,
                 password,
             });
+            console.log('register 4')
             setSuccessMessage(`User ${response.data.username} registered successfully!`);
             closeModal();
             setErrorMessage('');
