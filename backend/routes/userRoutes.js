@@ -10,6 +10,7 @@ const JWT_SECRET = process.env.JWT_SECRET;
 
 
 router.post('/signup', async (req, res) => {
+    console.log('signing up')
     const { username, password } = req.body;
 
     try {

@@ -47,7 +47,7 @@ function StoryView({ selectedStory, setSelectedStory, bookmarkedIndex, setBookma
         if (!token || !selectedStory) return;
 
         try {
-            const response = await axios.get(`http://localhost:5000/api/stories/checkLikeBookmark/${selectedStory._id}`, {
+            const response = await axios.get(`https://social-vv1i.onrender.com:5000/api/stories/checkLikeBookmark/${selectedStory._id}`, {
                 headers: { Authorization: `Bearer ${token}` },
             });
             if (response.data.isLiked) {
@@ -63,7 +63,7 @@ function StoryView({ selectedStory, setSelectedStory, bookmarkedIndex, setBookma
 
     const fetchStory = async () => {
         try {
-            const response = await axios.get(`http://localhost:5000/api/stories/${selectedStory._id}`, {
+            const response = await axios.get(`https://social-vv1i.onrender.com:5000/api/stories/${selectedStory._id}`, {
                 headers: { Authorization: `Bearer ${token}` },
             });
             setStory(response.data);
@@ -86,7 +86,7 @@ function StoryView({ selectedStory, setSelectedStory, bookmarkedIndex, setBookma
         }
         const slideIndex = isBookmarkedMode ? bookmarkedIndex : currentSlideIndex;
         try {
-            const response = await axios.post(`http://localhost:5000/api/stories/like/${selectedStory._id}/${slideIndex}`, {}, {
+            const response = await axios.post(`https://social-vv1i.onrender.com:5000/api/stories/like/${selectedStory._id}/${slideIndex}`, {}, {
                 headers: { Authorization: `Bearer ${token}` },
             });
 
@@ -117,7 +117,7 @@ function StoryView({ selectedStory, setSelectedStory, bookmarkedIndex, setBookma
         }
         const slideIndex = isBookmarkedMode ? bookmarkedIndex : currentSlideIndex;
         try {
-            const response = await axios.post(`http://localhost:5000/api/stories/bookmark/${selectedStory._id}/${slideIndex}`, {}, {
+            const response = await axios.post(`https://social-vv1i.onrender.com:5000/api/stories/bookmark/${selectedStory._id}/${slideIndex}`, {}, {
                 headers: { Authorization: `Bearer ${token}` },
             });
             setIsBookmarked(response.data.bookmarked);
