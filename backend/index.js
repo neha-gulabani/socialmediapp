@@ -16,7 +16,7 @@ const path = require('path');
 const app = express();
 app.use(express.json());
 const corsOptions = {
-    origin: 'https://social-z24q.vercel.app/',
+    origin: 'https://social-z24q.vercel.app',
     credentials: true,
     optionSuccessStatus: 200
 };
