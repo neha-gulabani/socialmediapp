@@ -205,6 +205,9 @@ h2 {
     margin-bottom: 20px;
 
     position: relative;
+     overflow-x: scroll;
+     overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
 
 }
 
@@ -219,6 +222,7 @@ h2 {
     -ms-overflow-style: none;
 
     scrollbar-width: none;
+    
 
 }
 
