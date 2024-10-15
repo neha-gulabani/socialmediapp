@@ -60,7 +60,7 @@ const Register = ({ closeModal }) => {
                     <label htmlFor="username">Username</label>
                     <input
                         type="text"
-                        id="username"
+                        id="username-signup"
                         placeholder="Enter username"
                         value={username}
                         onChange={(e) => setUsername(e.target.value)}
