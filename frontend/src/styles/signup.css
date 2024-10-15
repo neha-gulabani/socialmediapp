@@ -121,41 +121,41 @@
 
 @media (max-width: 768px) {
     .modal-contentsignup {
-        width: 55%;
-        height: auto;
-        padding: 30px 40px;
+        width: 55% !important;
+        height: auto !important;
+        padding: 30px 40px !important;
 
     }
 
     .input-group input {
 
-        margin-left: 20px;
-        align-items: flex-start;
+        margin-left: 20px !important;
+        align-items: flex-start !important;
 
 
     }
 
     .input-group {
 
-        flex-direction: column;
-        margin: 0;
-        align-items: flex-start;
+        flex-direction: column !important;
+        margin: 0 !important;
+        align-items: flex-start !important;
 
     }
 
     .input-group label {
-        margin-left: 20px;
+        margin-left: 20px !important;
 
     }
 
     .register-button {
-        width: 50%;
+        width: 50% !important;
     }
 
     .close-button {
-        width: 12%;
-        top: 20px;
-        right: 20px;
+        width: 12% !important;
+        top: 20px !important;
+        right: 20px !important;
 
     }
 
