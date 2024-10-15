@@ -127,7 +127,7 @@
 
     }
 
-    .input-group input {
+    .input-groupsignup input {
 
         margin-left: 20px !important;
         align-items: flex-start !important;
@@ -135,7 +135,7 @@
 
     }
 
-    .input-group {
+    .input-groupsignup {
 
         flex-direction: column !important;
         margin: 0 !important;
