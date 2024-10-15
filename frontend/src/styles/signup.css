@@ -148,6 +148,10 @@
 
     }
 
+    input#username{
+        margin-top:15px;
+    }
+
     .register-button {
         width: 50% !important;
     }
