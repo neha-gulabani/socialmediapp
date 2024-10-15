@@ -188,72 +188,25 @@ h2 {
 }
 
 
-.categories-container {
-  display: flex;
-  gap: 10px;
-  padding: 10px;
-  width: 100%;
-  white-space: nowrap;
-  box-sizing: border-box;
-  margin-bottom: 20px;
-  position: relative;
-  
-  /* Enable horizontal scrolling */
-  overflow-x: auto;
-  overflow-y: hidden;
-  
-  /* Improve scroll behavior */
-  scroll-behavior: smooth;
-  -webkit-overflow-scrolling: touch;
-  
-  /* Hide scrollbar by default */
-  scrollbar-width: none; /* Firefox */
-  -ms-overflow-style: none;  /* IE and Edge */
-  
-  /* Styling for WebKit browsers (Chrome, Safari, newer versions of Edge) */
-  &::-webkit-scrollbar {
-    width: 10px;
-    height: 10px;
-  }
-  
-  &::-webkit-scrollbar-track {
-    background: transparent;
-  }
-  
-  &::-webkit-scrollbar-thumb {
-    background: transparent;
-    border-radius: 5px;
-  }
-  
-  /* Show scrollbar on hover */
-  &:hover {
-    scrollbar-width: thin; /* Firefox */
-    
-    &::-webkit-scrollbar-thumb {
-      background: rgba(0, 0, 0, 0.2);
-    }
-    
-    &::-webkit-scrollbar-thumb:hover {
-      background: rgba(0, 0, 0, 0.4);
-    }
-  }
-}
-
-
-.categories-container::-webkit-scrollbar {
-    display: none;
-
-}
-
-
-.categories-container {
-    -ms-overflow-style: none;
-
-    scrollbar-width: none;
-    
-
-}
-
+.categories-container { 
+    display: flex; 
+    gap: 10px; 
+    padding: 10px; 
+    overflow-x: auto; 
+    scroll-behavior: smooth; 
+    width: 100%; 
+    white-space: nowrap; 
+    box-sizing: border-box; 
+    margin-bottom: 20px;
+    position: relative; 
+} 
+.categories-container::-webkit-scrollbar { 
+    display: none; 
+} 
+.categories-container { 
+    -ms-overflow-style: none; 
+    scrollbar-width: none; 
+} 
 .category-box {
     display: flex;
     justify-content: center;
