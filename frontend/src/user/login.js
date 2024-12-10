@@ -22,7 +22,7 @@ const Login = ({ closeModal, onLogin }) => {
 
         setIsLoggingIn(true);
         try {
-            const response = await axios.post('https://social-vv1i.onrender.com/auth/login', {
+            const response = await axios.post('https://socialmediapp-lfmh.onrender.com/auth/login', {
                 username,
                 password,
             });
