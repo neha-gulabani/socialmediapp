@@ -26,7 +26,7 @@ const Register = ({ closeModal }) => {
         setIsRegistering(true);
         console.log('register 3')
         try {
-            const response = await axios.post('https://social-vv1i.onrender.com/auth/signup', {
+            const response = await axios.post('https://socialmediapp-lfmh.onrender.com/auth/signup', {
                 username,
                 password,
             });
