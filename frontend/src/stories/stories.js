@@ -78,7 +78,7 @@ function Stories() {
 
     const fetchBookmarkedStories = async () => {
         try {
-            const response = await axios.get('https://social-vv1i.onrender.com/api/stories/bookmarked', {
+            const response = await axios.get('https://socialmediapp-lfmh.onrender.com/api/stories/bookmarked', {
                 headers: { Authorization: `Bearer ${token}` },
             });
             setBookmarkedStories(response.data);
@@ -110,7 +110,7 @@ function Stories() {
 
     const fetchStories = async () => {
         try {
-            const response = await axios.get('https://social-vv1i.onrender.com/api/stories/fetchstories', {
+            const response = await axios.get('https://socialmediapp-lfmh.onrender.com/api/stories/fetchstories', {
                 headers: {
                     Authorization: `Bearer ${token}`,
                 },
@@ -131,7 +131,7 @@ function Stories() {
 
     const fetchUserStories = async () => {
         try {
-            const response = await axios.get('https://social-vv1i.onrender.com/api/stories/userstories', {
+            const response = await axios.get('https://socialmediapp-lfmh.onrender.com/api/stories/userstories', {
                 headers: {
                     Authorization: `Bearer ${token}`,
                 },
@@ -148,7 +148,7 @@ function Stories() {
     const fetchUserData = async () => {
         if (token) {
             try {
-                const response = await axios.get('https://social-vv1i.onrender.com/api/stories/getUser', {
+                const response = await axios.get('https://socialmediapp-lfmh.onrender.com/api/stories/getUser', {
                     headers: {
                         Authorization: `Bearer ${token}`,
                     },
@@ -219,7 +219,7 @@ function Stories() {
                 slides: newStory.slides
             };
 
-            const response = await axios.post('https://social-vv1i.onrender.com/api/stories/add', storyPayload, {
+            const response = await axios.post('https://socialmediapp-lfmh.onrender.com/api/stories/add', storyPayload, {
                 headers: {
                     Authorization: `Bearer ${token}`,
                 },
@@ -236,7 +236,7 @@ function Stories() {
 
     const handleUpdateStory = async (updatedStory) => {
         try {
-            const response = await axios.put(`https://social-vv1i.onrender.com/api/stories/${editingStory._id}`, updatedStory, {
+            const response = await axios.put(`https://socialmediapp-lfmh.onrender.com/api/stories/${editingStory._id}`, updatedStory, {
                 headers: {
                     Authorization: `Bearer ${token}`,
                 },
